@@ -1,0 +1,70 @@
+aid: koho
+name: KOHO
+review:
+  question: Does KOHO expose a first-party public developer API or downloadable API specification?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    KOHO is a Canadian neobank/fintech (not a chartered bank) that publishes no
+    first-party public developer API and operates no developer portal. A probe of
+    developer.koho.ca does not resolve (DNS ENOTFOUND), and the public koho.ca site
+    documents no API products, no API reference, and no downloadable OpenAPI/Swagger.
+    KOHO's charter posture is a prepaid-Mastercard issuer (KOHO Financial Inc.) that
+    places customer funds in trust with CDIC-member institutions via its banking
+    partner, Peoples Trust Company; it is in the final stages of pursuing a federal
+    Schedule I banking licence. Consumer account/transaction data access is
+    aggregator-only, offered through Plaid and Flinks, not a direct KOHO API. This is
+    consistent with Canada's Consumer-Driven Banking (open-banking) framework, which
+    is legislated (Budget 2024 / Fall Economic Statement 2024, overseen by FCAC) but
+    not yet operational, so access remains voluntary and fragmented. On the payments
+    rails, KOHO joined Interac e-Transfer directly as a Participant in May 2026 under
+    the broadened PSP access, but that is network participation rather than a
+    published KOHO API. No FDX participation and no US Section 1033 posture are
+    documented (1033 is a US construct that does not apply to this Canadian entity).
+  developerPortal:
+    url: https://developer.koho.ca
+    status: DNS_NOT_FOUND
+    note: Hostname does not resolve (getaddrinfo ENOTFOUND). No first-party developer portal exists.
+  publicAPI: false
+  openapiHarvested: false
+  specProvenance: none
+  authModel: none-documented
+  fdxParticipant: false
+  section1033Posture: not-applicable
+  openFinancePosture: |
+    Aggregator-only. Data access via Plaid and Flinks. Canada's federal
+    Consumer-Driven Banking framework is legislated but not yet live; KOHO publishes
+    no first-party FDX or data-access API.
+  paymentsRails:
+    - network: Interac e-Transfer
+      role: Participant
+      since: '2026-05'
+      note: Direct participation under Interac's broadened access for Payment Service Providers (PSPs); not a published KOHO API.
+  transports:
+    - protocol: REST
+      documented: false
+      note: No public first-party REST API is documented by KOHO.
+    - protocol: Aggregator
+      documented: true
+      providers:
+        - Plaid
+        - Flinks
+      note: Third-party consumer data-access connectivity to KOHO accounts, not a KOHO-owned API.
+sources:
+  - url: https://www.koho.ca/
+    type: Website
+    note: Company and product overview; no developer API, open banking, or API reference mentioned.
+  - url: https://developer.koho.ca
+    type: DeveloperPortal
+    note: Probed — DNS does not resolve (ENOTFOUND). No developer portal.
+  - url: https://www.openbankingtracker.com/provider/koho-ca
+    type: Reference
+    note: States "No API products listed for KOHO"; lists Plaid and Flinks as the two aggregators providing connectivity.
+  - url: https://www.interac.ca/en/content/news/koho-joins-interac-e-transfer-as-a-participant/
+    type: Reference
+    note: KOHO joined Interac e-Transfer directly as a Participant (May 2026) under broadened PSP access.
+  - url: https://en.wikipedia.org/wiki/Koho_(fintech)
+    type: Reference
+    note: Company background — founded 2014, Vancouver; prepaid Mastercard via Peoples Trust; pursuing Schedule I banking licence.

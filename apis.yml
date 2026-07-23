@@ -1,0 +1,47 @@
+aid: koho
+url: https://raw.githubusercontent.com/api-evangelist/koho/refs/heads/main/apis.yml
+name: KOHO
+kind: company
+description: KOHO is a Canadian financial-technology company (neobank) founded in 2014
+  by Daniel Eberhard and headquartered in Vancouver, British Columbia, serving more than
+  2.5 million Canadians through a mobile-first money app. KOHO is not a chartered bank;
+  it issues a KOHO Mastercard prepaid card through KOHO Financial Inc. and places customer
+  balances in trust with CDIC-member institutions (its longstanding banking partner is
+  Peoples Trust Company), while offering high-interest savings, cash back, credit building,
+  Cover cash advances, and Pay Later. The company is in the final stages of pursuing a
+  federal Schedule I banking licence, which would make it one of Canada's first new
+  federally regulated banks in decades, and in May 2026 it joined the Interac e-Transfer
+  network directly as a Participant under the broadened access for Payment Service Providers.
+  On the open-finance front, KOHO exposes no first-party public developer API or portal;
+  consumer account and transaction data access today is available only through third-party
+  aggregators (Plaid and Flinks), consistent with Canada's voluntary, not-yet-operational
+  Consumer-Driven Banking framework.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- Canada
+- Fintech
+- Neobank
+- Payments
+- Interac
+- Data Aggregation
+- Consumer-Driven Banking
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.koho.ca/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/koho
+- type: TermsOfService
+  url: https://www.koho.ca/legal/
+- type: PrivacyPolicy
+  url: https://www.koho.ca/legal/
+- type: Support
+  url: https://www.koho.ca/contact/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

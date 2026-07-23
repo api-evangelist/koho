@@ -1,0 +1,25 @@
+generated: '2026-07-23'
+method: searched
+probe: true
+source: https://www.koho.ca/security/
+url: https://www.koho.ca/security/
+certifications:
+- SOC 2 Type 2
+- PCI DSS
+compliance_notes:
+- SOC 2 Type 2 third-party auditor report
+- Payment Card Industry Data Security Standard (PCI DSS) for stored payment card data
+- CDIC protection up to $100K on eligible Earn Interest balances (via CDIC-member banking partner)
+- Mastercard Zero Liability on the prepaid reloadable card
+security_practices:
+- AES-256 encryption of personal data at rest
+- Data-in-transit encryption
+- 24/7 security monitoring, detection and response
+- Dark-web and open-source compromise monitoring
+evidence:
+- source: https://www.koho.ca/security/
+  keywords:
+  - soc 2 type 2
+  - pci dss
+  - compliance and regulation
+  - aes-256

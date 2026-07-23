@@ -1,0 +1,6 @@
+Acknowledgments: https://hackerone.com/koho/thanks
+Contact: https://hackerone.com/koho
+Expires: 2025-12-31T23:59:00Z
+Hiring: https://www.koho.ca/careers/
+Policy: https://hackerone.com/koho
+Preferred-Languages: en

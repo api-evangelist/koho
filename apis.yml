@@ -32,6 +32,20 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: VulnerabilityDisclosure
+  url: security/koho-vulnerability-disclosure.yml
+- type: Security
+  url: https://hackerone.com/koho
+- type: DomainSecurity
+  url: security/koho-domain-security.yml
+- type: TrustCenter
+  url: https://www.koho.ca/security/
+- type: Compliance
+  url: https://www.koho.ca/security/
+- type: WellKnown
+  url: well-known/koho-well-known.yml
+- type: SecurityTxt
+  url: well-known/koho-security.txt
 - type: Website
   url: https://www.koho.ca/
 - type: LinkedIn
@@ -42,6 +56,10 @@ common:
   url: https://www.koho.ca/legal/
 - type: Support
   url: https://www.koho.ca/contact/
+- type: HelpCenter
+  url: https://help.koho.ca/
+- type: SignUp
+  url: https://web.koho.ca/register
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

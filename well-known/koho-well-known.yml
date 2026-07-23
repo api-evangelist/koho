@@ -1,0 +1,16 @@
+generated: '2026-07-23'
+method: searched
+source: live probe of https://www.koho.ca/.well-known/*
+host: https://www.koho.ca
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: koho-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

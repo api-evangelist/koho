@@ -18,6 +18,16 @@ description: KOHO is a Canadian financial-technology company (neobank) founded i
   Consumer-Driven Banking framework.
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
+- Financial-Services
+- Banking
+- Canada
+- Fintech
+- Neobank
+- Payments
+- Interac
+- Data Aggregation
+- Consumer-Driven Banking
+tags_raw:
 - Financial Services
 - Banking
 - Canada

@@ -16,6 +16,17 @@ description: KOHO is a Canadian financial-technology company (neobank) founded i
   consumer account and transaction data access today is available only through third-party
   aggregators (Plaid and Flinks), consistent with Canada's voluntary, not-yet-operational
   Consumer-Driven Banking framework.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Financial-Services
